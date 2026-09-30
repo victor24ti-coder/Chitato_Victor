@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VTR-Chitato</string>
+    <string name="komposisiGizi">
+        Komposisi / Nilai Gizi&#10;&#10;
+        Energi: 140 kkal&#10;
+        Lemak total: 8 g&#10;
+        Protein: 2 g&#10;
+        Karbohidrat: 15 g&#10;
+        Natrium: 120 mg
+    </string>
+</resources>

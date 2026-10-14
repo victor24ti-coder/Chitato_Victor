@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Brand Color Palette based on Grand Design & Figma -->
+    <color name="brand_primary">#9F1239</color> <!-- Primary Maroon -->
+    <color name="brand_primary_dark">#881337</color> <!-- Dark Maroon -->
+    <color name="brand_secondary">#F59E0B</color> <!-- Amber Gold -->
+    <color name="brand_secondary_dark">#D97706</color> <!-- Dark Gold -->
+
+    <!-- Background Surfaces -->
+    <color name="surface_canvas">#FFF7ED</color> <!-- Warm Cream Canvas -->
+    <color name="surface_card">#FFFFFF</color> <!-- White Card -->
+    <color name="surface_warning">#FEF3C7</color> <!-- Soft Yellow Info Card -->
+    <color name="surface_input">#FAFAF9</color> <!-- Input Field Surface -->
+
+    <!-- Status Badge Colors -->
+    <!-- Running / Berjalan -->
+    <color name="badge_running_bg">#FEF3C7</color>
+    <color name="badge_running_text">#D97706</color>
+
+    <!-- Finished / Selesai -->
+    <color name="badge_completed_bg">#E0F2FE</color>
+    <color name="badge_completed_text">#0284C7</color>
+
+    <!-- Working / Bekerja -->
+    <color name="badge_working_bg">#DCFCE7</color>
+    <color name="badge_working_text">#15803D</color>
+
+    <!-- Text & Neutral Colors -->
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+
+    <color name="border_light">#E2E8F0</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

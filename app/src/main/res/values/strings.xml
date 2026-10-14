@@ -1,11 +1,74 @@
 <resources>
-    <string name="app_name">VTR-Chitato</string>
-    <string name="komposisiGizi">
-        Komposisi / Nilai Gizi&#10;&#10;
-        Energi: 140 kkal&#10;
-        Lemak total: 8 g&#10;
-        Protein: 2 g&#10;
-        Karbohidrat: 15 g&#10;
-        Natrium: 120 mg
-    </string>
+    <string name="app_name">SIMANDAT DISNAKER</string>
+
+    <!-- Toolbar Titles -->
+    <string name="title_main">SIMANDAT DISNAKER</string>
+    <string name="subtitle_main">Disnaker Riau</string>
+    <string name="title_dashboard">Beranda — Arsip Disnaker</string>
+    <string name="title_daftar_pelatihan">Daftar Pelatihan</string>
+    <string name="title_detail_pelatihan">Detail Pelatihan</string>
+    <string name="title_web">Portal Web Disnaker</string>
+
+    <!-- Navigation Buttons -->
+    <string name="btn_open_web">Buka Portal Web Disnaker</string>
+    <string name="btn_open_dashboard">Masuk Ke Dashboard</string>
+    <string name="btn_open_detail">Detail Pelatihan</string>
+
+    <!-- Login Screen Strings -->
+    <string name="login_header_label">DISNAKER • LAYANAN INTERNAL</string>
+    <string name="login_title">Sistem Arsip Disnaker</string>
+    <string name="login_subtitle">Selamat datang kembali. Masuk untuk mengelola data pelatihan dan layanan ketenagakerjaan.</string>
+    <string name="login_email_label">Email atau username</string>
+    <string name="login_email_hint">rina@disnaker.go.id</string>
+    <string name="login_password_label">Kata sandi</string>
+    <string name="login_password_hint">••••••••</string>
+    <string name="login_remember_me">Ingat saya</string>
+    <string name="login_forgot_password">Lupa kata sandi?</string>
+    <string name="login_btn_submit">Masuk</string>
+    <string name="login_security_notice">Akses dilindungi untuk pegawai resmi. Jagalah kerahasiaan akun Anda.</string>
+    <string name="login_version">v2.0.0 Disnaker Riau</string>
+    <string name="security_shield_desc">Perlindungan Akses</string>
+
+    <!-- Dashboard Strings -->
+    <string name="greeting_name">Halo, Rina</string>
+    <string name="user_role">Staf Disnaker</string>
+    <string name="stat_total_pelatihan">Total Pelatihan</string>
+    <string name="stat_total_peserta">Total Peserta</string>
+    <string name="stat_penempatan_kerja">Penempatan Kerja</string>
+    <string name="stat_serapan_bekerja">Serapan Bekerja</string>
+    <string name="section_modul_layanan">Modul Layanan</string>
+    <string name="action_lihat_semua">Lihat Semua</string>
+    <string name="section_aktivitas_terbaru">Aktivitas Terbaru</string>
+    <string name="action_logout">Logout</string>
+
+    <!-- Services Modules -->
+    <string name="module_pelatihan">Pelatihan</string>
+    <string name="module_pemagangan">Pemagangan</string>
+    <string name="module_sertifikasi">Sertifikasi</string>
+    <string name="module_jobfair">Job Fair</string>
+    <string name="module_tracer">Tracer Study</string>
+    <string name="module_lpk">LPK</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_beranda">Beranda</string>
+    <string name="nav_pelatihan">Pelatihan</string>
+    <string name="nav_arsip">Arsip</string>
+    <string name="nav_profil">Profil</string>
+
+    <!-- Training List Strings -->
+    <string name="subtitle_daftar_pelatihan">128 program aktif</string>
+    <string name="search_hint">Cari pelatihan atau LPK</string>
+
+    <!-- Training Detail Strings -->
+    <string name="tab_info">Info</string>
+    <string name="tab_peserta">Peserta</string>
+    <string name="tab_sertifikat">Sertifikat</string>
+    <string name="section_daftar_peserta">Daftar Peserta</string>
+    <string name="btn_hapus">Hapus</string>
+    <string name="btn_edit">Edit</string>
+
+    <!-- Status Badges -->
+    <string name="status_berjalan">Berjalan</string>
+    <string name="status_selesai">Selesai</string>
+    <string name="status_bekerja">Bekerja</string>
 </resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_beranda" />
+    <item
+        android:id="@+id/nav_arsip"
+        android:icon="@drawable/ic_folder"
+        android:title="@string/nav_arsip" />
+    <item
+        android:id="@+id/nav_jobfair"
+        android:icon="@drawable/ic_jobfair"
+        android:title="@string/module_jobfair" />
+    <item
+        android:id="@+id/nav_tracer"
+        android:icon="@drawable/ic_tracer"
+        android:title="@string/module_tracer" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/nav_profil" />
+</menu>

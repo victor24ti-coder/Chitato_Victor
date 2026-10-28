@@ -37,9 +37,10 @@
     <string name="stat_penempatan_kerja">Penempatan Kerja</string>
     <string name="stat_serapan_bekerja">Serapan Bekerja</string>
     <string name="section_modul_layanan">Modul Layanan</string>
+    <string name="action_logout">Logout</string>
     <string name="action_lihat_semua">Lihat Semua</string>
     <string name="section_aktivitas_terbaru">Aktivitas Terbaru</string>
-    <string name="action_logout">Logout</string>
+
 
     <!-- Services Modules -->
     <string name="module_pelatihan">Pelatihan</string>

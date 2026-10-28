@@ -6,7 +6,6 @@ android {
     namespace = "com.example.vtr_chitato"
     compileSdk {
         version = release(37) {
-            minorApiLevel = 1
         }
     }
 

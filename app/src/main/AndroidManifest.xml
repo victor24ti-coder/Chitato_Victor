@@ -34,6 +34,10 @@
             android:exported="false" />
 
         <activity
+            android:name=".BaseActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
@@ -44,6 +48,18 @@
 
         <activity
             android:name=".AuthActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".VerificationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegistrasiSuksesActivity"
             android:exported="false" />
 
         <activity

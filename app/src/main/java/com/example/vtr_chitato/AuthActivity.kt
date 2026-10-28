@@ -15,23 +15,32 @@ class AuthActivity : AppCompatActivity() {
         binding = ActivityAuthBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Tombol Login
         binding.btnLogin.setOnClickListener {
-            val username = binding.etUsername.text.toString()
-            val password = binding.etPassword.text.toString()
+            val username = binding.etUsername.text.toString().trim()
+            val password = binding.etPassword.text.toString().trim()
 
-            if (username.isNotEmpty() && username == password) {
-                val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
-                val editor = sharedPref.edit()
-                editor.putBoolean("isLogin", true)
-                editor.putString("username", username)
-                editor.apply()
+            val sp = getSharedPreferences("user_pref", MODE_PRIVATE)
+            val spUsername = sp.getString("username", "") ?: ""
+            val spPassword = sp.getString("password", "") ?: ""
 
-                val intent = Intent(this, DashboardActivity::class.java)
+            val rule1 = username.isNotEmpty() && username == password
+            val rule2 = username.isNotEmpty() && password.isNotEmpty()
+                    && username == spUsername && password == spPassword
+
+            if (rule1 || rule2) {
+                sp.edit().putBoolean("isLogin", true).apply()
+                val intent = Intent(this, BaseActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {
-                Toast.makeText(this, "Silahkan coba lagi", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Login gagal! Username atau password salah.", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        // Teks "Daftar" → ke halaman Registrasi
+        binding.tvDaftar.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
     }
 }

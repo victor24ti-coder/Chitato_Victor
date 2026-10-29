@@ -45,8 +45,10 @@ class ProfileFragment : Fragment() {
                 .setTitle("Konfirmasi Logout")
                 .setMessage("Apakah Anda yakin ingin keluar dari akun ini?")
                 .setPositiveButton("Ya") { _, _ ->
-                    // Hapus session dengan requireContext() (pola Fragment)
-                    sharedPref.edit().clear().apply()
+                    // Hanya hapus FLAG sesi login, bukan seluruh data akun.
+                    // Ini agar tombol biometrik tetap muncul saat login berikutnya
+                    // karena username masih tersimpan di SharedPreferences.
+                    sharedPref.edit().putBoolean("isLogin", false).apply()
                     val intent = Intent(requireContext(), AuthActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                     startActivity(intent)

@@ -63,7 +63,9 @@ class DashboardActivity : AppCompatActivity() {
             .setMessage("Apakah Anda yakin ingin keluar dari akun ini?")
             .setPositiveButton("Ya") { _, _ ->
                 val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
-                sharedPref.edit().clear().apply()
+                // Hanya hapus FLAG sesi login, bukan seluruh data akun.
+                // Ini agar tombol biometrik tetap muncul saat login berikutnya.
+                sharedPref.edit().putBoolean("isLogin", false).apply()
                 val intent = Intent(this, AuthActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(intent)

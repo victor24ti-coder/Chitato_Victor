@@ -550,6 +550,51 @@
                     android:textSize="11sp" />
             </LinearLayout>
 
+            <!-- ═══════════════════════════════════════════════════════
+                 Fitur Baru: Grafik Tracer Study Alumni (MPAndroidChart)
+                 Library  : com.github.PhilJay:MPAndroidChart:v3.1.0
+                 Referensi: https://github.com/PhilJay/MPAndroidChart
+                            https://www.youtube.com/watch?v=3JGLM1mqUBg
+                 ═══════════════════════════════════════════════════════ -->
+
+            <!-- Section Header: Tracer Study -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Statistik Tracer Study Alumni"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Status penyerapan 4.120 alumni pelatihan"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+
+            <!-- Card wrapper untuk PieChart -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_rounded_card"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- PieChart dari MPAndroidChart -->
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chartTracerStudy"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:contentDescription="Grafik Pie Chart Tracer Study Alumni Disnaker" />
+
+            </LinearLayout>
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
